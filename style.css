@@ -121,6 +121,20 @@ header {
     border-color: #6a9df8;
 }
 
+.skill-box i {
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: block;
+    color: #6a9df8; /* warna ikon */
+    transition: transform 0.3s ease;
+}
+
+/* Animasi hover skill */
+.skill-box:hover i {
+    transform: scale(1.2);
+}
+
+
 /* -------- PROJECTS -------- */
 .project-grid {
     display: grid;
