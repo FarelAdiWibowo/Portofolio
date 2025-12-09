@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Farel Adi Wibowo</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -19,12 +20,13 @@
         </nav>
   </header>
 
-  <!-- Hero -->
-   <section class="hero">
-      <h2>Halo, saya <span>Farel Adi Wibowo</span></h2>
-      <p>Mahasiswa Semester 1 | Teknik Informatika</p>
-      <a href="contact" class="btn">Hubungi Saya</a>
-   </section>
+ <!-- Hero -->
+<section class="hero">
+    <h2>Halo, Saya <span>Farel Adi Wibowo</span></h2>
+    <p>Mahasiswa Semester 1 | Teknik Informatika</p>
+    <a href="#contactModal" class="btn">Hubungi Saya</a>
+</section>
+
 
    <!-- Tentang -->
     <section id="about" class="section">
@@ -59,29 +61,44 @@
             </div>
         </section>
 
-        <!-- Kontak -->
-<section id="contact" class="section">
-    <h2>Kontak</h2>
-
-    <div class="contact-links">
-        <a href="mailto:fareladiwibowo@gmail.com" class="contact-btn">
-            Email Saya
-        </a>
-
-        <a href="https://instagram.com/americ4no.hol1c" target="_blank" class="contact-btn">
-            Instagram
-        </a>
-
-        <a href="https://wa.me/6281290671030" target="_blank" class="contact-btn">
-            WhatsApp
-        </a>
+       <!-- Modal Kontak -->
+<section id="contactModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Kontak Saya</h2>
+        
+        <div class="contact-links">
+            <a href="mailto:fareladiwibowo@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://instagram.com/americ4no.hol1c" target="_blank" class="contact-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/6281290671030" target="_blank" class="contact-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
     </div>
-</section>
+  </section>
+        <!-- Footer di bawah tombol -->
+        <p style="margin-top:20px; font-size:14px; color:#999; text-align:center;">
+            © 2025 Farel Adi Wibowo. All rights reserved.
+        </p>
+    </div>
+  </section>
+
+       <div class="contact-links">
+    <a href="mailto:fareladiwibowo@gmail.com" class="contact-btn">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://instagram.com/americ4no.hol1c" target="_blank" class="contact-btn">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/6281290671030" target="_blank" class="contact-btn">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+</div>
 
 
-
-         <footer>
-              <p>© 2025 Farel Adi Wibowo. All rights reserved.</p>
-         </footer>
 </body>
 </html>
