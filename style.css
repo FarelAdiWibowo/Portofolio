@@ -1,0 +1,196 @@
+/* -------- GLOBAL -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #e5e5e5;
+    line-height: 1.7;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.section {
+     padding: 70px 10%;
+}
+
+/* -------- NAVBAR -------- */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #111;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+     color: #6a9df8
+}
+
+/* -------- HERO -------- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #6a9df8;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #bdbdbd;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: 1px solid #6a9df8;
+  color: #6a9df8;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn :hover {
+    background: #6a9df8;
+    color: black;
+}
+
+/* -------- SKILLS -------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+  background: #1a1a1a;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #2d2d2d;
+  transition: 0.3s;
+}
+
+.skill-box :hover {
+    border-color: #6a9df8;
+}
+
+/* -------- PROJECTS -------- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2d2d2d;
+    transition: 0.3s;
+}
+
+.project-card :hover {
+    border-color: #6a9df8;
+}
+
+/* -------- FOOTER -------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #999;
+    margin-top: 30px;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+     .nav-links {
+          display: none;
+     }
+}
+
+/* -------- CONTACT BUTTON STYLE -------- */
+.contact-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-btn {
+    padding: 12px 28px;
+    border-radius: 6px;
+    background: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    color: #6a9df8;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s ease;
+    display: inline-block;
+}
+
+/* Hover animasi */
+.contact-btn:hover {
+    transform: translateY(-4px);
+    border-color: #6a9df8;
+    background: #111926;
+}
+
+/* Efek click */
+.contact-btn:active {
+    transform: scale(0.95);
+    background: #0f1520;
+}
+
+.nav-links a,
+.skill-box,
+.project-card,
+.btn {
+    transition: 0.25s ease !important;
+}
